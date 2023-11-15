@@ -1,0 +1,32 @@
+nav {
+    border-bottom: 1px solid #999;
+    padding: 20px 0px;
+}
+
+nav.icon {
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+p {
+    display: inline;
+    color: #bbb;
+    /* text-decoration: white double underline; */
+}
+
+p:hover {
+    color: white;
+}
+
+p.active {
+    color: white;
+}
+
+nav>p {
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav>p.active {
+    text-decoration: underline;
+}
