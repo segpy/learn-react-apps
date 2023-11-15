@@ -1,0 +1,31 @@
+.title {
+    cursor: pointer;
+    color: white;
+}
+
+.title:hover {
+    color: #ccc;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.links-container p {
+    font-size: 16px;
+}
+
+.links-container p:hover {
+    color: #ccc;
+    cursor: pointer;
+}

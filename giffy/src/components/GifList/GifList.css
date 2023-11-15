@@ -1,0 +1,18 @@
+.gif-list-container {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 200px;
+    grid-gap: 1rem;
+    /* grid-auto-flow: column; */
+    /* column-count: 2;
+    height: auto; */
+}
+
+.gif-details-container {
+    /* border: 1px solid red; */
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    /* place-content: center; */
+}

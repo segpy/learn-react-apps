@@ -1,0 +1,15 @@
+.info-container {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* border: 1px solid #ff0000; */
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+    align-items: center;
+}
+
+.info-container strong {
+    font-size: 12px;
+    /* width: 100%; */
+}

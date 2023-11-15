@@ -1,0 +1,18 @@
+html {
+  background: rgb(22, 22, 22);
+  color: white;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+main {
+  padding: 30px 0;
+}
+
+.App {
+  /* border: 1px solid blue; */
+  text-align: center;
+}
