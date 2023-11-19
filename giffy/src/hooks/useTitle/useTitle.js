@@ -17,13 +17,16 @@ const useTitle = () => {
     }
     setTitle(myTitle)
     setDesription(myDesription)
-    document.querySelector('meta[name="description"]').setAttribute('content', desription)
 
-    document.title = `${title} | Giffy`
+    // Set title and description
+    // document.querySelector('meta[name="description"]').setAttribute('content', desription)
+    // document.title = `${title} | Giffy`
   }, [location, title, desription])
 
-//   useEffect(() => {
-//   }, [location, desription])
+  return {
+    title,
+    desription
+  }
 }
 
 export default useTitle

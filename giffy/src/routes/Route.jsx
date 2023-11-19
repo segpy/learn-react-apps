@@ -3,14 +3,14 @@ import { Route, Switch } from 'wouter'
 import { giffyRoutes } from './GiffyRoutes/GiffyRoutes'
 import Loading from '../components/Loading/Loading'
 import { GifContextProvider } from '../context/GifContext'
-import useTitle from '../hooks/useTitle/useTitle'
+// import useTitle from '../hooks/useTitle/useTitle'
 // import GifContext from '../context/GifContext'
 
 const CustomRouter = () => {
   const APP_ROUTES = [
     ...giffyRoutes
   ]
-  useTitle()
+  // useTitle()
 
   return (
     <Suspense fallback={<Loading />}>
