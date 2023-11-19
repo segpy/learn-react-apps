@@ -1,0 +1,35 @@
+<testExecutions version="1">
+  <file path="src/__test__/App.test.jsx">
+    <testCase name="App - should render App component with Header and CustomRouter" duration="20" />
+    <testCase name="App - should navigate to an unknown page" duration="1006">
+      <error message="Unable to find role=&quot;form&quot;
+
+Ignored nodes: comments, script, style
+[36m&lt;body&gt;[39m
+  [36m&lt;div /&gt;[39m
+[36m&lt;/body&gt;[39m
+
+Ignored nodes: comments, script, style
+[36m&lt;body&gt;[39m
+  [36m&lt;div /&gt;[39m
+[36m&lt;/body&gt;[39m">
+        <![CDATA[Error: Unable to find role=&quot;form&quot;
+
+Ignored nodes: comments, script, style
+[36m&lt;body&gt;[39m
+  [36m&lt;div /&gt;[39m
+[36m&lt;/body&gt;[39m
+    at waitForWrapper (/Users/sebasx/Documents/Dev/learn-react-apps/giffy/node_modules/@testing-library/dom/dist/wait-for.js:162:27)
+    at findByRole (/Users/sebasx/Documents/Dev/learn-react-apps/giffy/node_modules/@testing-library/dom/dist/query-helpers.js:86:33)
+    at /Users/sebasx/Documents/Dev/learn-react-apps/giffy/src/__test__/App.test.jsx:34:18
+    at file:///Users/sebasx/Documents/Dev/learn-react-apps/giffy/node_modules/@vitest/runner/dist/index.js:135:14
+    at file:///Users/sebasx/Documents/Dev/learn-react-apps/giffy/node_modules/@vitest/runner/dist/index.js:58:26
+    at runTest (file:///Users/sebasx/Documents/Dev/learn-react-apps/giffy/node_modules/@vitest/runner/dist/index.js:663:17)
+    at runSuite (file:///Users/sebasx/Documents/Dev/learn-react-apps/giffy/node_modules/@vitest/runner/dist/index.js:782:15)
+    at runSuite (file:///Users/sebasx/Documents/Dev/learn-react-apps/giffy/node_modules/@vitest/runner/dist/index.js:782:15)
+    at runFiles (file:///Users/sebasx/Documents/Dev/learn-react-apps/giffy/node_modules/@vitest/runner/dist/index.js:834:5)
+    at startTests (file:///Users/sebasx/Documents/Dev/learn-react-apps/giffy/node_modules/@vitest/runner/dist/index.js:843:3)]]>
+      </error>
+    </testCase>
+  </file>
+</testExecutions>
