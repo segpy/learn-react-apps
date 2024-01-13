@@ -8,6 +8,7 @@ const useTitle = () => {
   const [desription, setDesription] = useState('')
 
   useEffect(() => {
+    console.log('location', location)
     const myUrl = URLS.find(({ path }) => {
       return location.includes(path)
     })
