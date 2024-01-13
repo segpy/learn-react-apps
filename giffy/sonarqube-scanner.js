@@ -2,18 +2,19 @@ import scanner from 'sonarqube-scanner'
 scanner(
   {
     serverUrl: 'http://localhost:9000',
-    token: 'sqa_b0cb6445c659cd1a9efc6bbccf8ae63600a7a2f6',
+    token: 'sqa_536c32fc9be4683e2f651e5f305f420151c3cd9d',
     options: {
+      // Basic settings
       'sonar.sources': './src',
-      // 'sonar.exclusions': '**/*.test.jsx',
-      // 'sonar.tests': './src',
-      // 'sonar.test.inclusions': '**/*.test.jsx,**/*.test.js',
-      'sonar.exclusions': '**/__test__/**',
-      'sonar.tests': './src/__test__',
-      'sonar.test.inclusions': './src/__test__/**/*.test.jsx,./src/__test__/**/*.test.js',
+      // To exclude some files from analysis
+      'sonar.exclusions': 'src/**/*.{ts,tsx,!(*.test.tsx|*.test.ts)}',
+
+      // Test settings
+      'sonar.tests': './src',
+      'sonar.test.inclusions': '**/*.test.tsx,**/*.test.ts',
       'sonar.javascript.lcov.reportPaths': './coverage/lcov.info',
-      //   'sonar.typescript.lcov.reportPaths': 'coverage/lcov.info',
-      'sonar.testExecutionReportPaths': 'sonar-report.xml'
+      'sonar.typescript.lcov.reportPaths': './coverage/lcov.info'
+      // 'sonar.testExecutionReportPaths': 'sonar-report.xml'
     }
   },
   () => process.exit()
