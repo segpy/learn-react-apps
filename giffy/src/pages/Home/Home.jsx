@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useState } from 'react'
 
 import './Home.css'
 import { useLocation } from 'wouter'
@@ -8,6 +8,7 @@ import GifWrapper from '../../components/GifWrapper/GifWrapper'
 const Home = () => {
   const [, setLocation] = useLocation()
   const { localSearch } = useLocalStorage()
+  const [btnText, setBtnText] = useState('Hola')
   // const { show, elementRef } = useIntersection()
 
   const handleSubmit = useCallback((e) => {
@@ -20,10 +21,16 @@ const Home = () => {
     }
   }, [])
 
+  const handleChange = useCallback((e) => {
+    console.log(e.target)
+    const { value } = e.target
+    setBtnText(value)
+  }, [])
+
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <input type='text' placeholder='Search a gif here...' />
+        <input type='text' placeholder='Search a gif here...' onChange={handleChange} />
         <button>
           <svg xmlns='http://www.w3.org/2000/svg' className='icon icon-tabler icon-tabler-search' width='24' height='24' viewBox='0 0 24 24' strokeWidth='2' stroke='currentColor' fill='none' strokeLinecap='round' strokeLinejoin='round'>
             <path stroke='none' d='M0 0h24v24H0z' fill='none' />
@@ -32,6 +39,7 @@ const Home = () => {
           </svg>
         </button>
       </form>
+      <p>{btnText}</p>
       <h3>Ultima busqueda: <small>{localSearch}</small></h3>
       <GifWrapper keyword={localSearch} />
     </>
